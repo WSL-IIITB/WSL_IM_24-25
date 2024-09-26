@@ -1,0 +1,821 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/2D_RiceMaize?rev=1.0' id='2D_RiceMaize' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='R_M_2D_Diff_Impact' inline='true' name='federated.0d1e4zv1kqibdg13p6slu1c1kwog' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='R_M_2D_Diff_Impact' name='textscan.1s91oly0ng0pqn16r09bi0kzydvu'>
+            <connection class='textscan' directory='C:/Users/bhavi/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Maize Impact1]' />
+            <value name='[Rice Impact1]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[R_M_2D_Diff_Impact.csv].[Maize Impact]' />
+              <field name='[R_M_2D_Diff_Impact.csv].[Rice Impact]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1s91oly0ng0pqn16r09bi0kzydvu' name='R_M_2D_Diff_Impact.csv' table='[R_M_2D_Diff_Impact#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='District' ordinal='0' />
+              <column datatype='real' name='Original Rice Production' ordinal='1' />
+              <column datatype='integer' name='Original Maize Production' ordinal='2' />
+              <column datatype='real' name='Initial Stress' ordinal='3' />
+              <column datatype='real' name='Initial Stability' ordinal='4' />
+              <column datatype='integer' name='New Rice Production' ordinal='5' />
+              <column datatype='integer' name='New Maize Production' ordinal='6' />
+              <column datatype='real' name='Rice Impact' ordinal='7' />
+              <column datatype='real' name='Maize Impact' ordinal='8' />
+              <column datatype='real' name='Stability' ordinal='9' />
+              <column datatype='real' name='Stress' ordinal='10' />
+              <column datatype='integer' name='Perturbation' ordinal='11' />
+              <column datatype='string' name='Factor' ordinal='12' />
+              <column datatype='real' name='Avg_calc Rice Impact' ordinal='13' />
+              <column datatype='real' name='Avg_calcMaize Impact' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Maize Impact1]' />
+            <value name='[Rice Impact1]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[R_M_2D_Diff_Impact.csv].[Maize Impact]' />
+              <field name='[R_M_2D_Diff_Impact.csv].[Rice Impact]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1s91oly0ng0pqn16r09bi0kzydvu' name='R_M_2D_Diff_Impact.csv' table='[R_M_2D_Diff_Impact#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='District' ordinal='0' />
+              <column datatype='real' name='Original Rice Production' ordinal='1' />
+              <column datatype='integer' name='Original Maize Production' ordinal='2' />
+              <column datatype='real' name='Initial Stress' ordinal='3' />
+              <column datatype='real' name='Initial Stability' ordinal='4' />
+              <column datatype='integer' name='New Rice Production' ordinal='5' />
+              <column datatype='integer' name='New Maize Production' ordinal='6' />
+              <column datatype='real' name='Rice Impact' ordinal='7' />
+              <column datatype='real' name='Maize Impact' ordinal='8' />
+              <column datatype='real' name='Stability' ordinal='9' />
+              <column datatype='real' name='Stress' ordinal='10' />
+              <column datatype='integer' name='Perturbation' ordinal='11' />
+              <column datatype='string' name='Factor' ordinal='12' />
+              <column datatype='real' name='Avg_calc Rice Impact' ordinal='13' />
+              <column datatype='real' name='Avg_calcMaize Impact' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>District</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Rice Production</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Original Rice Production]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Original Rice Production</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Original Maize Production</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Original Maize Production]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Original Maize Production</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial Stress</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial Stress]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Initial Stress</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial Stability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial Stability]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Initial Stability</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Rice Production</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Rice Production]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>New Rice Production</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Maize Production</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Maize Production]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>New Maize Production</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Stability]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Stability</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stress</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Stress]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Stress</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Perturbation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Perturbation]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Perturbation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Factor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Factor]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Factor</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_calc Rice Impact</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_calc Rice Impact]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Avg_calc Rice Impact</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_calcMaize Impact</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_calcMaize Impact]</local-name>
+            <parent-name>[R_M_2D_Diff_Impact.csv]</parent-name>
+            <remote-alias>Avg_calcMaize Impact</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg calc Rice Impact' datatype='real' name='[Avg_calc Rice Impact]' role='measure' type='quantitative' />
+      <column caption='Avg calcMaize Impact' datatype='real' name='[Avg_calcMaize Impact]' role='measure' type='quantitative' />
+      <column caption='District1' datatype='string' name='[District]' role='dimension' type='nominal' />
+      <column caption='Perturbation1' datatype='integer' name='[Perturbation]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Stability1' datatype='real' name='[Stability]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='R_M_2D_Diff_Impact.csv' datatype='table' name='[__tableau_internal_object_id__].[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]' role='measure' type='quantitative' />
+      <column-instance column='[Perturbation]' derivation='None' name='[none:Perturbation:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <group caption='Pecentage Change' name='[Perturbation Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Perturbation:ok]' member='-20' />
+          <groupfilter function='member' level='[none:Perturbation:ok]' member='-10' />
+          <groupfilter function='member' level='[none:Perturbation:ok]' member='10' />
+          <groupfilter function='member' level='[none:Perturbation:ok]' member='20' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_0xa0zos0zh32yq116zvz718612ed.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>District</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District</remote-alias>
+              <ordinal>0</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Original Rice Production</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Original Rice Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Original Rice Production</remote-alias>
+              <ordinal>1</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Original Maize Production</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Original Maize Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Original Maize Production</remote-alias>
+              <ordinal>2</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial Stress</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Initial Stress]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial Stress</remote-alias>
+              <ordinal>3</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial Stability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Initial Stability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial Stability</remote-alias>
+              <ordinal>4</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Rice Production</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Rice Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Rice Production</remote-alias>
+              <ordinal>5</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Maize Production</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Maize Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Maize Production</remote-alias>
+              <ordinal>6</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Stability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stability</remote-alias>
+              <ordinal>7</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stress</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Stress]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stress</remote-alias>
+              <ordinal>8</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Perturbation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Perturbation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Perturbation</remote-alias>
+              <ordinal>9</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Factor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Factor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Factor</remote-alias>
+              <ordinal>10</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_calc Rice Impact</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_calc Rice Impact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_calc Rice Impact</remote-alias>
+              <ordinal>11</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_calcMaize Impact</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_calcMaize Impact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_calcMaize Impact</remote-alias>
+              <ordinal>12</ordinal>
+              <family>R_M_2D_Diff_Impact.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Pivot</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>236</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Maize Impact:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[sum:Maize Impact:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Rice Impact:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[sum:Rice Impact:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maize Impact1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rice Impact1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='R_M_2D_Diff_Impact.csv' id='R_M_2D_Diff_Impact.csv_E71E491066904EA4B839737718FF0728'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Maize Impact1]' />
+                  <value name='[Rice Impact1]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[R_M_2D_Diff_Impact.csv].[Maize Impact]' />
+                    <field name='[R_M_2D_Diff_Impact.csv].[Rice Impact]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1s91oly0ng0pqn16r09bi0kzydvu' name='R_M_2D_Diff_Impact.csv' table='[R_M_2D_Diff_Impact#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='string' name='District' ordinal='0' />
+                    <column datatype='real' name='Original Rice Production' ordinal='1' />
+                    <column datatype='integer' name='Original Maize Production' ordinal='2' />
+                    <column datatype='real' name='Initial Stress' ordinal='3' />
+                    <column datatype='real' name='Initial Stability' ordinal='4' />
+                    <column datatype='integer' name='New Rice Production' ordinal='5' />
+                    <column datatype='integer' name='New Maize Production' ordinal='6' />
+                    <column datatype='real' name='Rice Impact' ordinal='7' />
+                    <column datatype='real' name='Maize Impact' ordinal='8' />
+                    <column datatype='real' name='Stability' ordinal='9' />
+                    <column datatype='real' name='Stress' ordinal='10' />
+                    <column datatype='integer' name='Perturbation' ordinal='11' />
+                    <column datatype='string' name='Factor' ordinal='12' />
+                    <column datatype='real' name='Avg_calc Rice Impact' ordinal='13' />
+                    <column datatype='real' name='Avg_calcMaize Impact' ordinal='14' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Avg Rice impact +20%' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20.26'>
+        <calculation class='tableau' formula='20.26' />
+      </column>
+      <column caption='Avg Maize Impact +20%' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.85'>
+        <calculation class='tableau' formula='25.85' />
+      </column>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='2D_RiceMaize NPK+20'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Lateral Impact Analysis for Rice an</run>
+            <run fontcolor='#000000' fontsize='14'>d Maize</run>
+            <run fontcolor='#7f7f7f' fontsize='14'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/2D_RiceMaize/2D_RiceMaize?rev=' id='105754678' path='/workbooks/2D_RiceMaize' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='R_M_2D_Diff_Impact' name='federated.0d1e4zv1kqibdg13p6slu1c1kwog' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Avg Rice impact +20%' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20.26'>
+              <calculation class='tableau' formula='20.26' />
+            </column>
+            <column caption='Avg Maize Impact +20%' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.85'>
+              <calculation class='tableau' formula='25.85' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0d1e4zv1kqibdg13p6slu1c1kwog'>
+            <column caption='District1' datatype='string' name='[District]' role='dimension' type='nominal' />
+            <column caption='Perturbation1' datatype='integer' name='[Perturbation]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column caption='Stability1' datatype='real' name='[Stability]' role='measure' type='quantitative' />
+            <column-instance column='[District]' derivation='None' name='[none:District:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Perturbation]' derivation='None' name='[none:Perturbation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Stability]' derivation='None' name='[none:Stability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[sum:Pivot Field Values:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[Perturbation Set]'>
+            <groupfilter function='member' level='[none:Perturbation:ok]' member='20' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:District:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:District:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:District:nk]' member='&quot;DAKSHINA KANNADA&quot;' />
+                <groupfilter function='member' level='[none:District:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[Perturbation Set]</column>
+            <column>[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[:Measure Names]</column>
+            <column>[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:District:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' scope='rows' value='Maize Impact' />
+            <format attr='title' class='1' field='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' scope='rows' value='Rice Impact' />
+            <format attr='title' class='0' field='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Stability:qk]' scope='cols' value='Stability' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='3' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-size' id='refline1' value='2' />
+            <format attr='stroke-color' id='refline2' value='#ff0000be' />
+            <format attr='stroke-size' id='refline2' value='1' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dashed' />
+            <format attr='fill-above' id='refline3' value='#00000000' />
+            <format attr='fill-below' id='refline3' value='#00000000' />
+            <format attr='line-visibility' id='refline3' value='on' />
+            <format attr='line-pattern-only' id='refline3' value='dashed' />
+            <format attr='stroke-size' id='refline3' value='2' />
+            <format attr='stroke-color' id='refline0' value='#555555b9' />
+            <format attr='stroke-color' id='refline3' value='#ff000081' />
+            <format attr='stroke-color' id='refline1' value='#0000ff7e' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Stability:qk]' enable-instant-analytics='false' formula='average' id='refline0' label='Avg Stability' label-type='custom' probability='95' scope='per-pane' value-column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Stability:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-pane' value-column='[Parameters].[Parameter 2]' z-order='2' />
+            <reference-line axis-column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' enable-instant-analytics='true' formula='average' id='refline3' label-type='none' probability='95' scope='per-pane' value-column='[Parameters].[Parameter 1]' z-order='3' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+              <text column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:District:nk]' />
+              <lod column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+              <lod column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.75762432813644409' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+              <path column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' />
+              <lod column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:District:nk]' />
+              <lod column='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[sum:Pivot Field Values:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk] + [federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Values:qk])</rows>
+        <cols>[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Stability:qk]</cols>
+      </table>
+      <simple-id uuid='{B4CDB10B-225F-43F9-B6B1-ACCEAB59339A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='2D_RiceMaize NPK+20'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[Perturbation Set]' type='filter' />
+            <card pane-specification-id='5' param='[federated.0d1e4zv1kqibdg13p6slu1c1kwog].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1FAD150-983A-4A50-9483-B71CDDCC1B53}' />
+    </window>
+  </windows>
+</workbook>
